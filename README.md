@@ -59,6 +59,69 @@ ASYNC/AWAIT
 10. **What is the benefit of using async/await over promises?**
     - Async/await provides a more readable and maintainable way to write asynchronous code compared to promises. It eliminates the need for explicit promise chaining and error handling, making the code easier to understand and debug.
 
+Certainly! Here are the answers to the additional questions for your README.md file:
+
 ---
 
-Feel free to adjust the formatting or wording to better suit your README.md file!
+11. **Can you use async/await with forEach?**
+    - Yes, you can use async/await with `forEach`. However, `forEach` does not wait for the asynchronous operation to complete before moving to the next iteration. If you need to ensure that all iterations are completed before continuing, you can use `Promise.all` with `map` instead.
+
+12. **How do you handle errors in async functions without try/catch?**
+    - You can handle errors in async functions without try/catch by attaching a `.catch` method to the returned promise. For example:
+      ```javascript
+      async function myAsyncFunction() {
+          return someAsyncOperation().catch(error => {
+              // Handle error
+          });
+      }
+      ```
+
+13. **What happens if you use await without async?**
+    - If you use `await` outside of an async function, you'll get a syntax error. `await` can only be used inside an async function.
+
+14. **Can you use async/await in a browser environment?**
+    - Yes, you can use async/await in a browser environment as long as the browser supports ECMAScript 2017 (ES8) or later, which introduced async functions.
+
+15. **How do you handle multiple async functions in parallel with async/await?**
+    - You can handle multiple async functions in parallel with async/await by using `Promise.all`. `Promise.all` takes an array of promises and returns a single promise that resolves when all of the input promises have resolved or rejects as soon as one of the promises in the iterable rejects.
+
+16. **Explain the difference between async/await and generators.**
+    - Async/await and generators are both used to work with asynchronous code, but they have different syntax and behavior. Async/await allows you to write asynchronous code that looks and behaves like synchronous code, while generators are functions that can be paused and resumed, allowing for more complex asynchronous control flow.
+
+17. **How do you handle async functions that depend on each other?**
+    - You can handle async functions that depend on each other by chaining them together using `await`. For example:
+      ```javascript
+      async function firstAsyncFunction() {
+          const result = await secondAsyncFunction();
+          return result;
+      }
+      ```
+
+18. **What are the limitations of async/await?**
+    - Some limitations of async/await include:
+      - Cannot be used at the top level of a module.
+      - Error handling is more verbose compared to synchronous code.
+      - May not be supported in older browsers without transpilation.
+
+19. **How do you handle async functions in a try/catch block?**
+    - You can handle async functions in a try/catch block by wrapping the `await` expression in a try block and using catch to handle any errors that occur. For example:
+      ```javascript
+      async function myAsyncFunction() {
+          try {
+              const result = await someAsyncOperation();
+              return result;
+          } catch (error) {
+              // Handle error
+          }
+      }
+      ```
+
+20. **How do you convert a promise chain to async/await?**
+    - You can convert a promise chain to async/await by wrapping the promise chain in an async function and using `await` to handle each asynchronous operation. For example:
+      ```javascript
+      async function myAsyncFunction() {
+          const result1 = await someAsyncOperation1();
+          const result2 = await someAsyncOperation2(result1);
+          return result2;
+      }
+      ```
