@@ -106,4 +106,116 @@
     person.greet(); // Output: Hello, my name is John.
     ```
 
-Please let me know if you need further clarification or additional questions!
+
+11. **Difference between function declaration and function expression:**
+   - Function Declaration: Declared using the `function` keyword followed by the function name. Function declarations are hoisted to the top of their containing scope.
+   - Function Expression: Created by assigning a function to a variable. Function expressions are not hoisted.
+
+   ```javascript
+   // Function declaration
+   function greet() {
+       return 'Hello!';
+   }
+
+   // Function expression
+   const greet = function() {
+       return 'Hello!';
+   };
+   ```
+
+12. **Creating a function that accepts a variable number of arguments:**
+    You can use the rest parameter syntax (`...`) to create a function that accepts a variable number of arguments as an array. The rest parameter must be the last parameter in the function definition.
+
+    ```javascript
+    function sum(...args) {
+        return args.reduce((total, current) => total + current, 0);
+    }
+
+    console.log(sum(1, 2, 3, 4, 5)); // Output: 15
+    ```
+
+13. **Higher-order function:**
+    A higher-order function is a function that takes one or more functions as arguments or returns a function as its result. Higher-order functions enable you to abstract over actions, not just values.
+
+14. **Using functions as arguments in JavaScript:**
+    Functions can be passed as arguments to other functions, allowing for flexibility in behavior. This is commonly used for callbacks in asynchronous programming.
+
+    ```javascript
+    function fetchData(callback) {
+        setTimeout(() => {
+            const data = { message: 'Data fetched successfully' };
+            callback(data);
+        }, 1000);
+    }
+
+    fetchData((data) => {
+        console.log(data.message); // Output: Data fetched successfully
+    });
+    ```
+
+15. **Returning a function from another function:**
+    You can return a function from another function by simply defining and returning a new function inside the outer function.
+
+    ```javascript
+    function createGreeter(greeting) {
+        return function(name) {
+            return `${greeting}, ${name}!`;
+        };
+    }
+
+    const greet = createGreeter('Hello');
+    console.log(greet('John')); // Output: Hello, John!
+    ```
+
+16. **Closure in JavaScript:**
+    A closure is a function that retains access to its enclosing scope's variables even after the outer function has finished executing. Closures are created every time a function is created, and they allow for data encapsulation and private variables in JavaScript.
+
+17. **Using the call and apply methods to change the context of a function:**
+    The `call` and `apply` methods can be used to invoke a function with a specified `this` context and arguments. The difference between them is in how they accept arguments: `call` accepts arguments individually, while `apply` accepts arguments as an array.
+
+    ```javascript
+    function greet() {
+        console.log(`Hello, ${this.name}!`);
+    }
+
+    const person = { name: 'John' };
+
+    greet.call(person); // Output: Hello, John!
+    greet.apply(person); // Output: Hello, John!
+    ```
+
+18. **Using arrow functions in JavaScript:**
+    Arrow functions are a concise way to write functions in JavaScript. They have a more implicit syntax and automatically bind `this` to the surrounding context.
+
+    ```javascript
+    const add = (a, b) => a + b;
+    console.log(add(2, 3)); // Output: 5
+    ```
+
+19. **Creating a recursive function in JavaScript:**
+    A recursive function is a function that calls itself. You can create a recursive function by including a base case that determines when the recursion should stop.
+
+    ```javascript
+    function factorial(n) {
+        if (n === 0) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
+    }
+
+    console.log(factorial(5)); // Output: 120
+    ```
+
+20. **Using the rest parameter syntax in a function:**
+    The rest parameter syntax (`...`) allows a function to accept an indefinite number of arguments as an array. The rest parameter must be the last parameter in the function definition.
+
+    ```javascript
+    function sum(...args) {
+        return args.reduce((total, current) => total + current, 0);
+    }
+
+    console.log(sum(1, 2, 3, 4, 5)); // Output: 15
+    ```
+
+
