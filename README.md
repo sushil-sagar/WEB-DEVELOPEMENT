@@ -243,4 +243,228 @@ Here's a template for your README.md file with HTML questions and answers:
 50. **What is the purpose of the `<track>` tag?**
     - The `<track>` tag is used to specify text tracks for media elements such as `<audio>` and `<video>`. It is used to provide subtitles, captions, descriptions, or chapters for the media content.
 
-      
+      **51. What is the purpose of the `<iframe>` tag?**
+   - The `<iframe>` tag is used to embed another document or webpage within the current HTML document. It allows you to display content from another source, such as a video, map, or external website, within your webpage.
+
+**52. How do you create a favicon for a webpage?**
+   - To create a favicon for a webpage, you need to create a small icon file (usually named `favicon.ico`) and place it in the root directory of your website. You can also use the `<link>` tag in the `<head>` section of your HTML document to specify the location of the favicon. For example:
+     ```html
+     <link rel="icon" href="favicon.ico" type="image/x-icon">
+     ```
+
+**53. Explain the purpose of the `<base>` tag.**
+   - The `<base>` tag is used to specify a base URL for all relative URLs within a document. It allows you to set a default URL for links, images, and other resources, which can be useful when working with multiple pages or directories within a website.
+
+**54. How do you create a meta viewport tag for responsive design?**
+   - To create a meta viewport tag for responsive design, you use the following `<meta>` tag in the `<head>` section of your HTML document:
+     ```html
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     ```
+     This tag tells the browser to set the viewport width to the device width and to set the initial scale to 1.0, which ensures that the webpage is displayed correctly on different devices and screen sizes.
+
+**55. What is the purpose of the aria-* attributes in HTML?**
+   - The aria-* attributes in HTML are used to enhance the accessibility of web content for users with disabilities. They provide additional information about the structure and purpose of elements on a webpage, making it easier for screen readers and other assistive technologies to interpret and navigate the content.
+
+**56. How do you create a text input field that only accepts numbers?**
+   - To create a text input field that only accepts numbers, you can use the `type="number"` attribute in the `<input>` tag. For example:
+     ```html
+     <input type="number" name="quantity" min="1" max="10">
+     ```
+
+**57. Explain the difference between the `<strong>` and `<b>` tags.**
+   - The `<strong>` tag is used to indicate strong importance or emphasis, typically displayed in bold by browsers. It is used to convey that the enclosed text is more important or has stronger emphasis than surrounding text. The `<b>` tag, on the other hand, is used to stylistically apply bold formatting to text, without necessarily indicating any semantic importance or emphasis.
+
+**58. How do you create a button in HTML?**
+   - To create a button in HTML, you use the `<button>` tag. For example:
+     ```html
+     <button type="button">Click Me!</button>
+     ```
+
+**59. What is the purpose of the rel attribute in the `<a>` tag?**
+   - The `rel` attribute in the `<a>` tag is used to specify the relationship between the current document and the linked document. It is often used to indicate the type of link, such as `rel="stylesheet"` for a CSS stylesheet link or `rel="nofollow"` for a link that should not be followed by search engines.
+
+**60. How do you create a background image in HTML?**
+   - To create a background image in HTML, you can use the `background-image` CSS property in a `<style>` tag or an external CSS file. For example:
+     ```html
+     <style>
+       body {
+         background-image: url('background.jpg');
+       }
+     </style>
+     ```
+
+**61. Explain the purpose of the defer attribute in the `<script>` tag.**
+   - The `defer` attribute in the `<script>` tag is used to defer the execution of a script until after the document has been parsed. This can improve the loading performance of a webpage by allowing other resources to load first.
+
+**62. How do you create a text area in HTML?**
+   - To create a text area in HTML, you use the `<textarea>` tag. For example:
+     ```html
+     <textarea rows="4" cols="50">
+       Enter text here...
+     </textarea>
+     ```
+
+**63. What is the purpose of the readonly attribute in the `<input>` tag?**
+   - The `readonly` attribute in the `<input>` tag is used to make an input field read-only, meaning that the user can view the value but cannot modify it. This is useful for displaying information that should not be changed by the user.
+
+**64. How do you create a responsive navigation bar in HTML?**
+   - To create a responsive navigation bar in HTML, you can use
+
+ a combination of HTML, CSS, and JavaScript. You can use CSS media queries to adjust the navigation bar layout based on the screen size, and JavaScript to add interactivity, such as a toggle button for mobile devices.
+
+**65. Explain the purpose of the <optgroup> tag.**
+   - The `<optgroup>` tag is used to group related `<option>` elements within a `<select>` dropdown list. It allows you to create nested groups of options, making it easier for users to navigate and select options in the dropdown list.
+
+**66. How do you create a radio button in HTML?**
+   - To create a radio button in HTML, you use the `<input>` tag with `type="radio"`. Radio buttons are typically used in groups, where only one option can be selected at a time. For example:
+     ```html
+     <input type="radio" id="option1" name="radio-group" value="option1">
+     <label for="option1">Option 1</label>
+     <br>
+     <input type="radio" id="option2" name="radio-group" value="option2">
+     <label for="option2">Option 2</label>
+     ```
+
+**67. What is the purpose of the required attribute in the `<input>` tag?**
+   - The `required` attribute in the `<input>` tag is used to specify that an input field must be filled out before submitting a form. It is used to enforce data validation and ensure that important information is provided by the user.
+
+**68. How do you create a progress bar in HTML?**
+   - To create a progress bar in HTML, you can use the `<progress>` tag. For example:
+     ```html
+     <progress value="50" max="100"></progress>
+     ```
+     This creates a progress bar with a value of 50 out of a maximum value of 100.
+
+**69. Explain the purpose of the placeholder attribute in the `<input>` tag.**
+   - The `placeholder` attribute in the `<input>` tag is used to provide a hint or example text for the user. It is typically used to indicate the expected format or content of an input field, such as a sample email address or phone number.
+
+**70. How do you create a responsive image slider in HTML?**
+   - To create a responsive image slider in HTML, you can use a combination of HTML, CSS, and JavaScript. You can use CSS to style the slider and make it responsive, and JavaScript to add functionality such as sliding images and navigation controls.
+
+**71. What is the purpose of the autocomplete attribute in the `<input>` tag?**
+   - The `autocomplete` attribute in the `<input>` tag is used to enable or disable autocomplete functionality for an input field. When autocomplete is enabled, the browser can suggest or automatically fill in the input field based on the user's previous inputs.
+
+**72. How do you create a dropdown list with multiple selections in HTML?**
+   - To create a dropdown list with multiple selections in HTML, you can use the `<select>` tag with the `multiple` attribute. For example:
+     ```html
+     <select multiple>
+       <option value="option1">Option 1</option>
+       <option value="option2">Option 2</option>
+       <option value="option3">Option 3</option>
+     </select>
+     ```
+
+**73. Explain the purpose of the download attribute in the `<a>` tag.**
+   - The `download` attribute in the `<a>` tag is used to specify that the target of the link should be downloaded when clicked, rather than navigated to. It is typically used for links to downloadable files, such as PDFs, images, or documents.
+
+**74. How do you create a responsive video in HTML?**
+   - To create a responsive video in HTML, you can use the `<video>` tag with CSS to make the video player responsive. For example:
+     ```html
+     <video width="100%" height="auto" controls>
+       <source src="video.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+     </video>
+     ```
+
+**75. What is the purpose of the open attribute in the <details> tag?**
+   - The `open` attribute in the `<details>` tag is used to specify that the details in a `<details>` element should be visible by default. It is used to show or hide additional information in a collapsible section.
+**76. How do you create a responsive grid layout in HTML?**
+   - To create a responsive grid layout in HTML, you can use CSS frameworks like Bootstrap or Flexbox. These frameworks provide classes and utilities that allow you to create grid-based layouts that automatically adjust to different screen sizes. For example, using Bootstrap's grid system:
+     ```html
+     <div class="container">
+       <div class="row">
+         <div class="col-sm-6">Column 1</div>
+         <div class="col-sm-6">Column 2</div>
+       </div>
+     </div>
+     ```
+
+**77. Explain the purpose of the `<ruby>`, `<rt>`, and `<rp>` tags.**
+   - The `<ruby>` tag is used to define a ruby annotation, which is typically used in East Asian typography to annotate characters with pronunciation or meaning. The `<rt>` tag is used to define the pronunciation of the characters, and the `<rp>` tag is used to provide fallback content for browsers that do not support ruby annotations.
+
+**78. How do you create a hyperlink that sends an email in HTML?**
+   - To create a hyperlink that sends an email in HTML, you use the `<a>` tag with the `mailto:` attribute in the `href` attribute. For example:
+     ```html
+     <a href="mailto:example@example.com">Send Email</a>
+     ```
+
+**79. What is the purpose of the `<canvas>` tag in HTML5?**
+   - The `<canvas>` tag in HTML5 is used to draw graphics, animations, and other visual elements on a webpage using JavaScript. It provides a drawing surface that can be manipulated dynamically to create interactive and visually appealing content.
+
+**80. How do you create a responsive login form in HTML?**
+   - To create a responsive login form in HTML, you can use a combination of HTML and CSS to style the form and make it responsive to different screen sizes. You can use media queries in CSS to adjust the layout and styling of the form based on the screen size.
+
+**81. Explain the purpose of the `maxlength` attribute in the `<input>` tag.**
+   - The `maxlength` attribute in the `<input>` tag is used to specify the maximum number of characters that can be entered into a text input field. It is commonly used to limit the length of input for fields such as names, emails, and passwords.
+
+**82. How do you create a dropdown list with a search box in HTML?**
+   - To create a dropdown list with a search box in HTML, you can use the `<select>` tag for the dropdown list and add a text input field for the search box. You can then use JavaScript to filter the dropdown options based on the text entered in the search box.
+
+**83. What is the purpose of the `defer` attribute in the `<script>` tag?**
+   - The `defer` attribute in the `<script>` tag is used to specify that the script should be executed after the document has been parsed, but before the `DOMContentLoaded` event is fired. This allows scripts to be loaded asynchronously without blocking the rendering of the page.
+
+**84. How do you create a responsive image gallery in HTML?**
+   - To create a responsive image gallery in HTML, you can use CSS to create a grid layout for the images and make them responsive using media queries. You can also use JavaScript to add functionality such as image lightboxes or sliders.
+
+**85. Explain the purpose of the `tabindex` attribute in HTML.**
+   - The `tabindex` attribute in HTML is used to specify the order in which elements should receive focus when the user navigates through the page using the Tab key. It can also be used to make non-focusable elements focusable for accessibility purposes.
+
+**86. How do you create a responsive carousel in HTML?**
+   - To create a responsive carousel in HTML, you can use a combination of HTML, CSS, and JavaScript. You can use CSS to style the carousel and make it responsive, and JavaScript to add functionality such as sliding images and navigation controls.
+
+**87. What is the purpose of the `checked` attribute in the `<input>` tag?**
+   - The `checked` attribute in the `<input>` tag is used to specify that a checkbox or radio button should be checked by default when the page loads. It is commonly used to preselect options in a form.
+
+**88. How do you create a sticky footer in HTML?**
+   - To create a sticky footer in HTML, you can use CSS to position the footer at the bottom of the page and make it stick to the bottom even when the content is not enough to fill the entire viewport height. For example:
+     ```html
+     <style>
+       footer {
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         background-color: #f1f1f1;
+         text-align: center;
+       }
+     </style>
+     <footer>Footer content here</footer>
+     ```
+
+**89. Explain the purpose of the `target` attribute in the `<a>` tag.**
+   - The `target` attribute in the `<a>` tag is used
+
+ to specify where the linked document should be opened when the link is clicked. It can be set to `_blank` to open the link in a new tab or window, or to `_self` to open the link in the same tab or window.
+
+**90. How do you create a responsive table in HTML?**
+   - To create a responsive table in HTML, you can use the `<table>` tag with CSS to make the table responsive. You can use media queries in CSS to adjust the layout and styling of the table based on the screen size.
+
+**91. What is the purpose of the `autofocus` attribute in the `<input>` tag?**
+   - The `autofocus` attribute in the `<input>` tag is used to specify that an input field should automatically receive focus when the page loads, allowing the user to start typing without having to click on the input field.
+
+**92. How do you create a responsive accordion in HTML?**
+   - To create a responsive accordion in HTML, you can use a combination of HTML, CSS, and JavaScript. You can use CSS to style the accordion and make it responsive, and JavaScript to add functionality such as expanding and collapsing accordion sections.
+
+**93. Explain the purpose of the `list` attribute in the `<input>` tag.**
+   - The `list` attribute in the `<input>` tag is used to associate an input field with a `<datalist>` element, which provides a list of predefined options for the input field. It is commonly used for autocomplete functionality.
+
+**94. How do you create a responsive modal in HTML?**
+   - To create a responsive modal in HTML, you can use a combination of HTML, CSS, and JavaScript. You can use CSS to style the modal and make it responsive, and JavaScript to add functionality such as opening and closing the modal.
+
+**95. What is the purpose of the `<meta charset>` tag in HTML?**
+   - The `<meta charset>` tag in HTML is used to specify the character encoding for the document. It ensures that the browser interprets the text correctly and displays special characters and symbols properly.
+
+**96. How do you create a responsive form in HTML?**
+   - To create a responsive form in HTML, you can use CSS to style the form and make it responsive to different screen sizes. You can use media queries in CSS to adjust the layout and styling of the form based on the screen size.
+
+**97. Explain the purpose of the `role` attribute in HTML.**
+   - The `role` attribute in HTML is used to define the role or purpose of an element for accessibility purposes. It is used to describe the function of an element to assistive technologies such as screen readers.
+
+**98. How do you create a responsive image map in HTML?**
+   - To create a responsive image map in HTML, you can use the `<map>` and `<area>` tags to define clickable areas on an image. You can use CSS to make the image map responsive and adjust the clickable areas based on the screen size.
+
+**99. What is the purpose of the `alt` attribute in the `<img>` tag?**
+   - The `alt` attribute in the `<img>` tag is used to provide alternative text for an image, which is displayed if the image cannot be loaded or if the user is using a screen reader. It is important for accessibility and SEO purposes.
+
+**100. How do you create a responsive timeline in HTML?**
+    - To create a responsive timeline in HTML, you can use CSS to style the timeline and make it responsive, and JavaScript to add functionality such as scrolling and navigation. You can use media queries in CSS to adjust the layout and styling of the timeline based on the screen size.
