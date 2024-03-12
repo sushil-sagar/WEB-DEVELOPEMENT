@@ -1,9 +1,11 @@
 ## Other README Files
 
-- [JavaScript Questions and Answers](path/to/javascript-questions.md)
-- [CSS Questions and Answers](path/to/css-questions.md)
-- [Promises, Async/Await, and Callbacks Questions and Answers](path/to/promises-async-await-callbacks.md)
-- [Objects Questions and Answers](path/to/objects.md)
+
+
+- [JavaScript Questions and Answers](https://github.com/sushil-sagar/WEB-DEVELOPEMENT/blob/main/JAVASCRIPT.md)
+- [CSS Questions and Answers](https://github.com/sushil-sagar/WEB-DEVELOPEMENT/blob/main/CSS.md)
+- [Promises, Async/Await, and Callbacks Questions and Answers](https://github.com/sushil-sagar/WEB-DEVELOPEMENT/blob/main/ASYNC.md)
+- [Objects Questions and Answers](https://github.com/sushil-sagar/WEB-DEVELOPEMENT/blob/main/OBJECTS.md)
 
 
 *Objects:*
